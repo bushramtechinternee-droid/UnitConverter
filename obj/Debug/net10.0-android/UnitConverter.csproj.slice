@@ -246,6 +246,7 @@ Components/
   MainLayout.razor
   NavMenu.razor
  Pages/
+  ConverterPage.razor
   Counter.razor
   Home.razor
   NotFound.razor

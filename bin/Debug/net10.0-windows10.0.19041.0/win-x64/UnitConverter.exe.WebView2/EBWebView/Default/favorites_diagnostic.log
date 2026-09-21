@@ -1,0 +1,9 @@
+2026-09-21 09:34:13.247: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 09:34:13.247: [INFO] Profiles total count: 1
+2026-09-21 09:34:13.247: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=null
+2026-09-21 09:34:13.247: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 09:34:13.247: [INFO] OnDoneLoading sync enabled: 0
+2026-09-21 09:34:13.247: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-21 09:34:13.247: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-21 09:34:13.247: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 09:36:23.199: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

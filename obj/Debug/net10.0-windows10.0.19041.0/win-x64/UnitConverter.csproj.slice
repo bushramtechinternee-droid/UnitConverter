@@ -25,7 +25,7 @@ TemporaryDependencyNodeTargetIdentifier=net10.0-windows10.0.19041.0
 /noconfig
 /unsafe-
 /checked-
-/nowarn:1701,1702,1701,1702,8002
+/nowarn:1701,1702,1701,1702,1701,1702,8002
 /fullpaths
 /nostdlib+
 /errorreport:prompt
@@ -44,7 +44,8 @@ TemporaryDependencyNodeTargetIdentifier=net10.0-windows10.0.19041.0
 /target:winexe
 /warnaserror-
 /utf8output
-/win32manifest:Platforms/Windows/app.manifest
+/win32icon:<PATH>obj/Debug/net10.0-windows10.0.19041.0/win-x64/resizetizer/r/appicon.ico
+/win32manifest:<PATH>obj/Debug/net10.0-windows10.0.19041.0/win-x64/Manifests/app.manifest
 /deterministic+
 /langversion:14.0
 /features:use-roslyn-tokenizer=true
@@ -56,11 +57,15 @@ TemporaryDependencyNodeTargetIdentifier=net10.0-windows10.0.19041.0
  WindowsAppRuntimeAutoInitializer.cs
 Models/Conversion.cs
 obj/Debug/net10.0-windows10.0.19041.0/win-x64/
+ Platforms/Windows/
+  App.g.cs
+  App.g.i.cs
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
  EmbeddedAttribute.cs
  UnitConverter.AssemblyInfo.cs
  UnitConverter.GlobalUsings.g.cs
  ValidatableTypeAttribute.cs
+ XamlTypeInfo.g.cs
 Platforms/Windows/App.xaml.cs
 App.xaml.cs
 DatabaseService.cs
@@ -180,6 +185,7 @@ Components/
   MainLayout.razor
   NavMenu.razor
  Pages/
+  ConverterPage.razor
   Counter.razor
   Home.razor
   NotFound.razor

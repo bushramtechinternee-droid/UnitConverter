@@ -1,0 +1,172 @@
+@page "/converter"
+@using UnitConverter.Models
+@inject DatabaseService DbService
+
+<PageTitle>Unit Converter</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Small" Class="mt-4">
+    <MudText Typo="Typo.h4" Class="mb-4">Unit Converter</MudText>
+
+    <MudSelect T="string" Label="Category" @bind-Value="SelectedCategory" @bind-Value:after="OnCategoryChanged">
+        <MudSelectItem Value="@("Length")">Length</MudSelectItem>
+        <MudSelectItem Value="@("Weight")">Weight</MudSelectItem>
+        <MudSelectItem Value="@("Temperature")">Temperature</MudSelectItem>
+    </MudSelect>
+
+    <MudGrid Class="mt-2">
+        <MudItem xs="6">
+            <MudSelect T="string" Label="From" @bind-Value="FromUnit" @bind-Value:after="Convert">
+                @foreach (var unit in CurrentUnits)
+                {
+                    <MudSelectItem Value="@unit">@unit</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+        <MudItem xs="6">
+            <MudSelect T="string" Label="To" @bind-Value="ToUnit" @bind-Value:after="Convert">
+                @foreach (var unit in CurrentUnits)
+                {
+                    <MudSelectItem Value="@unit">@unit</MudSelectItem>
+                }
+            </MudSelect>
+        </MudItem>
+    </MudGrid>
+
+    <MudNumericField T="double" Label="Value" @bind-Value="InputValue" @bind-Value:after="Convert" Class="mt-4" />
+
+    <MudText Typo="Typo.h5" Class="mt-4">Result: @Result.ToString("0.####")</MudText>
+
+    <MudDivider Class="my-4" />
+
+    <MudText Typo="Typo.h6">Last 5 Conversions</MudText>
+    <MudList T="string">
+        @foreach (var item in RecentConversions)
+        {
+            <MudListItem>
+                @item.InputValue @item.FromUnit → @item.ResultValue.ToString("0.####") @item.ToUnit
+            </MudListItem>
+        }
+    </MudList>
+</MudContainer>
+
+@code {
+    private string SelectedCategory = "Length";
+    private string FromUnit = "Meter";
+    private string ToUnit = "Kilometer";
+    private double InputValue = 0;
+    private double Result = 0;
+    private List<Conversion> RecentConversions = new();
+
+    private Dictionary<string, string[]> CategoryUnits = new()
+    {
+        { "Length", new[] { "Meter", "Kilometer", "Centimeter", "Mile", "Foot", "Inch" } },
+        { "Weight", new[] { "Kilogram", "Gram", "Pound", "Ounce" } },
+        { "Temperature", new[] { "Celsius", "Fahrenheit", "Kelvin" } }
+    };
+
+    private string[] CurrentUnits => CategoryUnits[SelectedCategory];
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadRecent();
+    }
+
+    private async Task OnCategoryChanged()
+{
+    FromUnit = CurrentUnits[0];
+    ToUnit = CurrentUnits.Length > 1 ? CurrentUnits[1] : CurrentUnits[0];
+    await Convert();
+}
+
+    private async Task Convert()
+    {
+        Result = ConvertValue(SelectedCategory, FromUnit, ToUnit, InputValue);
+
+        var record = new Conversion
+        {
+            FromUnit = FromUnit,
+            ToUnit = ToUnit,
+            InputValue = InputValue,
+            ResultValue = Result,
+            ConvertedAt = DateTime.Now
+        };
+
+        await DbService.SaveConversionAsync(record);
+        await LoadRecent();
+    }
+
+    private async Task LoadRecent()
+    {
+        RecentConversions = await DbService.GetRecentConversionsAsync();
+    }
+
+    private double ConvertValue(string category, string from, string to, double value)
+    {
+        if (from == to) return value;
+
+        double meters = category switch
+        {
+            "Length" => from switch
+            {
+                "Meter" => value,
+                "Kilometer" => value * 1000,
+                "Centimeter" => value / 100,
+                "Mile" => value * 1609.34,
+                "Foot" => value * 0.3048,
+                "Inch" => value * 0.0254,
+                _ => value
+            },
+            "Weight" => from switch
+            {
+                "Kilogram" => value,
+                "Gram" => value / 1000,
+                "Pound" => value * 0.453592,
+                "Ounce" => value * 0.0283495,
+                _ => value
+            },
+            _ => value
+        };
+
+        if (category == "Temperature")
+        {
+            double celsius = from switch
+            {
+                "Celsius" => value,
+                "Fahrenheit" => (value - 32) * 5.0 / 9.0,
+                "Kelvin" => value - 273.15,
+                _ => value
+            };
+
+            return to switch
+            {
+                "Celsius" => celsius,
+                "Fahrenheit" => (celsius * 9.0 / 5.0) + 32,
+                "Kelvin" => celsius + 273.15,
+                _ => celsius
+            };
+        }
+
+        return category switch
+        {
+            "Length" => to switch
+            {
+                "Meter" => meters,
+                "Kilometer" => meters / 1000,
+                "Centimeter" => meters * 100,
+                "Mile" => meters / 1609.34,
+                "Foot" => meters / 0.3048,
+                "Inch" => meters / 0.0254,
+                _ => meters
+            },
+            "Weight" => to switch
+            {
+                "Kilogram" => meters,
+                "Gram" => meters * 1000,
+                "Pound" => meters / 0.453592,
+                "Ounce" => meters / 0.0283495,
+                _ => meters
+            },
+            _ => meters
+        };
+    }
+}

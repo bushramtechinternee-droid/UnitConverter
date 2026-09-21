@@ -48,6 +48,7 @@ TemporaryDependencyNodeTargetIdentifier=net10.0-android
 /warnaserror+:NU1605,SYSLIB0011
 
 [sourceFiles]
+Models/Conversion.cs
 obj/Debug/net10.0-android/
  designtime/__Microsoft.Android.Resource.Designer.cs
  .NETCoreApp,Version=v10.0.AssemblyAttributes.cs
@@ -59,6 +60,7 @@ Platforms/Android/
  MainActivity.cs
  MainApplication.cs
 App.xaml.cs
+DatabaseService.cs
 MainPage.xaml.cs
 MauiProgram.cs
 

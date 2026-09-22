@@ -7,3 +7,133 @@
 2026-09-21 09:34:13.247: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-09-21 09:34:13.247: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-09-21 09:36:23.199: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 09:39:31.221: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 09:39:31.221: [INFO] Profiles total count: 1
+2026-09-21 09:39:31.221: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T09:36:07.905Z
+2026-09-21 09:39:31.221: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 09:39:31.221: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T09:36:07.905Z
+2026-09-21 09:39:31.221: [INFO] OnDoneLoading sync enabled: 0
+2026-09-21 09:39:31.221: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-21 09:39:31.221: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-21 09:39:31.221: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 09:47:08.014: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 10:02:50.480: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 10:02:50.480: [INFO] Profiles total count: 1
+2026-09-21 10:02:50.481: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T09:47:00.963Z
+2026-09-21 10:02:50.481: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 10:02:50.481: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T09:47:00.963Z
+2026-09-21 10:02:50.481: [INFO] OnDoneLoading sync enabled: 0
+2026-09-21 10:02:50.481: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-21 10:02:50.481: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-21 10:02:50.481: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 10:19:59.422: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 10:58:06.972: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 10:58:06.972: [INFO] Profiles total count: 1
+2026-09-21 10:58:06.973: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T10:19:57.158Z
+2026-09-21 10:58:06.973: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 10:58:06.973: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T10:19:57.158Z
+2026-09-21 10:58:06.973: [INFO] OnDoneLoading sync enabled: 0
+2026-09-21 10:58:06.973: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-21 10:58:06.973: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-21 10:58:06.973: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 10:58:11.373: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 10:59:32.221: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 10:59:32.221: [INFO] Profiles total count: 1
+2026-09-21 10:59:32.221: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T10:58:07.426Z
+2026-09-21 10:59:32.221: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 10:59:32.221: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T10:58:07.426Z
+2026-09-21 10:59:32.221: [INFO] OnDoneLoading sync enabled: 0
+2026-09-21 10:59:32.221: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-21 10:59:32.221: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-21 10:59:32.221: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 11:00:12.885: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 11:01:31.677: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 11:01:31.677: [INFO] Profiles total count: 1
+2026-09-21 11:01:31.678: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T11:00:10.858Z
+2026-09-21 11:01:31.678: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-21 11:01:31.678: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T11:00:10.858Z
+2026-09-21 11:01:31.678: [INFO] OnDoneLoading sync enabled: 0
+2026-09-21 11:01:31.678: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-21 11:01:31.678: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-21 11:01:31.678: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-21 11:02:55.625: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 05:14:53.935: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 05:14:53.935: [INFO] Profiles total count: 1
+2026-09-22 05:14:53.935: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T11:01:32.699Z
+2026-09-22 05:14:53.935: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 05:14:53.935: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-21T11:01:32.699Z
+2026-09-22 05:14:53.935: [INFO] OnDoneLoading sync enabled: 0
+2026-09-22 05:14:53.935: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-22 05:14:53.935: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-22 05:14:53.935: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 05:59:30.410: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 07:43:53.471: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 07:43:53.471: [INFO] Profiles total count: 1
+2026-09-22 07:43:53.471: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T05:59:27.416Z
+2026-09-22 07:43:53.471: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 07:43:53.471: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T05:59:27.416Z
+2026-09-22 07:43:53.471: [INFO] OnDoneLoading sync enabled: 0
+2026-09-22 07:43:53.471: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-22 07:43:53.471: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-22 07:43:53.471: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 07:56:19.227: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 07:57:03.613: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 07:57:03.613: [INFO] Profiles total count: 1
+2026-09-22 07:57:03.614: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T07:55:27.894Z
+2026-09-22 07:57:03.614: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 07:57:03.614: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T07:55:27.894Z
+2026-09-22 07:57:03.614: [INFO] OnDoneLoading sync enabled: 0
+2026-09-22 07:57:03.614: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-22 07:57:03.614: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-22 07:57:03.614: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 08:49:34.393: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 08:50:10.437: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 08:50:10.437: [INFO] Profiles total count: 1
+2026-09-22 08:50:10.437: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T08:49:31.897Z
+2026-09-22 08:50:10.437: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 08:50:10.437: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T08:49:31.897Z
+2026-09-22 08:50:10.437: [INFO] OnDoneLoading sync enabled: 0
+2026-09-22 08:50:10.437: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-22 08:50:10.437: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-22 08:50:10.437: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 08:58:53.447: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 09:02:54.561: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 09:02:54.561: [INFO] Profiles total count: 1
+2026-09-22 09:02:54.561: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T08:50:11.524Z
+2026-09-22 09:02:54.561: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 09:02:54.561: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T08:50:11.524Z
+2026-09-22 09:02:54.561: [INFO] OnDoneLoading sync enabled: 0
+2026-09-22 09:02:54.561: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-22 09:02:54.561: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-22 09:02:54.561: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 09:16:18.203: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 09:16:47.255: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 09:16:47.255: [INFO] Profiles total count: 1
+2026-09-22 09:16:47.255: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T09:16:15.769Z
+2026-09-22 09:16:47.255: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 09:16:47.255: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T09:16:15.769Z
+2026-09-22 09:16:47.255: [INFO] OnDoneLoading sync enabled: 0
+2026-09-22 09:16:47.255: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-22 09:16:47.255: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-22 09:16:47.255: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 09:23:53.162: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 09:24:20.038: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 09:24:20.038: [INFO] Profiles total count: 1
+2026-09-22 09:24:20.039: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T09:19:26.058Z
+2026-09-22 09:24:20.039: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 09:24:20.039: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T09:19:26.058Z
+2026-09-22 09:24:20.039: [INFO] OnDoneLoading sync enabled: 0
+2026-09-22 09:24:20.039: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-22 09:24:20.039: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-22 09:24:20.039: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 09:30:20.323: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 09:31:29.382: [INFO] CurrentProfilePath: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 09:31:29.382: [INFO] Profiles total count: 1
+2026-09-22 09:31:29.382: [INFO] Profile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T09:25:25.908Z
+2026-09-22 09:31:29.382: [INFO] LastUsedProfileDir: C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default
+2026-09-22 09:31:29.382: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default lastActive=2026-09-22T09:25:25.908Z
+2026-09-22 09:31:29.382: [INFO] OnDoneLoading sync enabled: 0
+2026-09-22 09:31:29.382: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-09-22 09:31:29.382: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-09-22 09:31:29.382: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-09-22 09:31:59.097: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1

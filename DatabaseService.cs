@@ -25,9 +25,33 @@ namespace UnitConverter
                              .ToListAsync();
         }
 
+        public Task<List<Conversion>> GetAllConversionsAsync()
+        {
+            return _database.Table<Conversion>()
+                             .OrderByDescending(c => c.ConvertedAt)
+                             .ToListAsync();
+        }
+
+        public Task<Conversion> GetConversionByIdAsync(int id)
+        {
+            return _database.Table<Conversion>()
+                             .Where(c => c.Id == id)
+                             .FirstOrDefaultAsync();
+        }
+
         public Task<int> SaveConversionAsync(Conversion conversion)
         {
             return _database.InsertAsync(conversion);
+        }
+
+        public Task<int> UpdateConversionAsync(Conversion conversion)
+        {
+            return _database.UpdateAsync(conversion);
+        }
+
+        public Task<int> DeleteConversionAsync(Conversion conversion)
+        {
+            return _database.DeleteAsync(conversion);
         }
     }
 }

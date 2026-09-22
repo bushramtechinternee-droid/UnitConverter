@@ -11,6 +11,7 @@ namespace UnitConverter.Models
         public string ToUnit { get; set; }
         public double InputValue { get; set; }
         public double ResultValue { get; set; }
+        public bool WasUpdated { get; set; } = false;
         public DateTime ConvertedAt { get; set; }
     }
 }

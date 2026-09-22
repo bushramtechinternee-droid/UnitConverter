@@ -1,0 +1,107 @@
+@page "/history"
+@page "/"
+@using UnitConverter.Models
+@inject DatabaseService DbService
+@inject NavigationManager Navigation
+
+<PageTitle>Conversion History</PageTitle>
+
+<MudContainer MaxWidth="MaxWidth.Medium" Class="mt-4">
+        <MudPaper Class="pa-4 mb-4" Elevation="3" Style="background: linear-gradient(90deg, #1E3A7B, #4A0E22); border-radius: 12px; color: white;">
+        <MudGrid AlignItems="Center">
+            <MudItem xs="8">
+                <div style="display:flex; align-items:center; gap:12px;">
+                    <MudIcon Icon="@Icons.Material.Filled.SwapHoriz" Size="Size.Large" />
+                    <div>
+                        <MudText Typo="Typo.h5">Conversion Management</MudText>
+                        <MudText Typo="Typo.body2">Manage your unit conversions</MudText>
+                    </div>
+                </div>
+            </MudItem>
+            <MudItem xs="4" Class="d-flex justify-end">
+                <MudButton Variant="Variant.Filled" Color="Color.Warning" OnClick="GoToAdd">
+                    + Add Conversion
+                </MudButton>
+            </MudItem>
+        </MudGrid>
+    </MudPaper>
+
+<MudGrid Class="mb-4">
+    <MudItem xs="6" sm="3">
+        <MudPaper Class="pa-4" Elevation="3" Style="background:#7B1E3A; color:white; border-radius:10px;">
+            <MudText Typo="Typo.h4">@(AllConversions?.Count ?? 0)</MudText>
+            <MudText Typo="Typo.body2">Total Conversions</MudText>
+        </MudPaper>
+    </MudItem>
+    <MudItem xs="6" sm="3">
+        <MudPaper Class="pa-4" Elevation="3" Style="background:#00897B; color:white; border-radius:10px;">
+            <MudText Typo="Typo.h4">@(AllConversions?.Count(c => c.WasUpdated) ?? 0)</MudText>
+            <MudText Typo="Typo.body2">Updated</MudText>
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+        
+
+    @if (AllConversions == null)
+    {
+        <MudText>Loading...</MudText>
+    }
+    else if (AllConversions.Count == 0)
+    {
+        <MudText>No conversions yet.</MudText>
+    }
+    else
+    {
+        <MudTable Items="@AllConversions" Hover="true" Breakpoint="Breakpoint.Sm">
+            <HeaderContent>
+                <MudTh>From</MudTh>
+                <MudTh>To</MudTh>
+                <MudTh>Input</MudTh>
+                <MudTh>Result</MudTh>
+                <MudTh>Date</MudTh>
+                <MudTh>Actions</MudTh>
+            </HeaderContent>
+            <RowTemplate>
+                <MudTd DataLabel="From">@context.FromUnit</MudTd>
+                <MudTd DataLabel="To">@context.ToUnit</MudTd>
+                <MudTd DataLabel="Input">@context.InputValue</MudTd>
+                <MudTd DataLabel="Result">@context.ResultValue.ToString("0.####")</MudTd>
+                <MudTd DataLabel="Date">@context.ConvertedAt.ToString("dd-MMM-yyyy HH:mm")</MudTd>
+                <MudTd DataLabel="Actions">
+                    <MudIconButton Icon="@Icons.Material.Filled.Edit" Color="Color.Primary" OnClick="@(() => EditItem(context.Id))" />
+                    <MudIconButton Icon="@Icons.Material.Filled.Delete" Color="Color.Error" OnClick="@(() => DeleteItem(context))" />
+                </MudTd>
+            </RowTemplate>
+        </MudTable>
+    }
+</MudContainer>
+
+@code {
+    private List<Conversion> AllConversions;
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadData();
+    }
+
+    private async Task LoadData()
+    {
+        AllConversions = await DbService.GetAllConversionsAsync();
+    }
+
+    private void GoToAdd()
+    {
+        Navigation.NavigateTo("/converter");
+    }
+
+    private void EditItem(int id)
+    {
+        Navigation.NavigateTo($"/converter/{id}");
+    }
+
+    private async Task DeleteItem(Conversion item)
+    {
+        await DbService.DeleteConversionAsync(item);
+        await LoadData();
+    }
+}

@@ -1,2 +1,3 @@
-2026/09/21-14:34:13.254 10c Creating DB C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default\Sync Data\LevelDB since it was missing.
-2026/09/21-14:34:13.262 10c Reusing MANIFEST C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/09/22-14:31:29.376 a70 Reusing MANIFEST C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default\Sync Data\LevelDB/MANIFEST-000001
+2026/09/22-14:31:29.377 a70 Recovering log #3
+2026/09/22-14:31:29.378 a70 Reusing old log C:\UnitConverter\bin\Debug\net10.0-windows10.0.19041.0\win-x64\UnitConverter.exe.WebView2\EBWebView\Default\Sync Data\LevelDB/000003.log 

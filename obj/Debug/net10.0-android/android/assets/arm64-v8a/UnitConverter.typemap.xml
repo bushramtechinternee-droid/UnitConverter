@@ -1,0 +1,10 @@
+<api type="debug" assembly-name="UnitConverter" mvid="6ce1a24a75c54c09974d6bc1df7c4081">
+  <java-to-managed>
+    <entry java-name="crc64fcb20a5cdd07e044/MainActivity" managed-name="UnitConverter.MainActivity, UnitConverter" managed-type-token-id="33554443" />
+    <entry java-name="crc64fcb20a5cdd07e044/MainApplication" managed-name="UnitConverter.MainApplication, UnitConverter" managed-type-token-id="33554444" />
+  </java-to-managed>
+  <managed-to-java>
+    <entry java-name="crc64fcb20a5cdd07e044/MainActivity" managed-name="UnitConverter.MainActivity, UnitConverter" managed-type-token-id="33554443" />
+    <entry java-name="crc64fcb20a5cdd07e044/MainApplication" managed-name="UnitConverter.MainApplication, UnitConverter" managed-type-token-id="33554444" />
+  </managed-to-java>
+</api>

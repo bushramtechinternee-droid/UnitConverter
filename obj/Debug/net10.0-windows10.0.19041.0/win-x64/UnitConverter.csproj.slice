@@ -186,10 +186,8 @@ Components/
   NavMenu.razor
  Pages/
   ConverterPage.razor
-  Counter.razor
-  Home.razor
+  HistoryPage.razor
   NotFound.razor
-  Weather.razor
  Routes.razor
  _Imports.razor
 App.xaml

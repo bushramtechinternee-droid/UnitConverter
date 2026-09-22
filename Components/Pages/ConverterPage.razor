@@ -1,11 +1,13 @@
 @page "/converter"
+@page "/converter/{Id:int}"
 @using UnitConverter.Models
 @inject DatabaseService DbService
+@inject NavigationManager Navigation
 
-<PageTitle>Unit Converter</PageTitle>
+<PageTitle>@(Id.HasValue ? "Edit Conversion" : "Add Conversion")</PageTitle>
 
 <MudContainer MaxWidth="MaxWidth.Small" Class="mt-4">
-    <MudText Typo="Typo.h4" Class="mb-4">Unit Converter</MudText>
+    <MudText Typo="Typo.h4" Class="mb-4">@(Id.HasValue ? "Edit Conversion" : "Unit Converter")</MudText>
 
     <MudSelect T="string" Label="Category" @bind-Value="SelectedCategory" @bind-Value:after="OnCategoryChanged">
         <MudSelectItem Value="@("Length")">Length</MudSelectItem>
@@ -36,26 +38,24 @@
 
     <MudText Typo="Typo.h5" Class="mt-4">Result: @Result.ToString("0.####")</MudText>
 
-    <MudDivider Class="my-4" />
-
-    <MudText Typo="Typo.h6">Last 5 Conversions</MudText>
-    <MudList T="string">
-        @foreach (var item in RecentConversions)
-        {
-            <MudListItem>
-                @item.InputValue @item.FromUnit → @item.ResultValue.ToString("0.####") @item.ToUnit
-            </MudListItem>
-        }
-    </MudList>
-</MudContainer>
+    <MudButton Variant="Variant.Filled" Color="Color.Primary" Class="mt-4" OnClick="SaveConversion">
+        @(Id.HasValue ? "Update" : "Save")
+    </MudButton>
+    <MudButton Variant="Variant.Filled" Color="Color.Secondary" Class="mt-4 ml-2" OnClick="GoToHistory">
+back
+</MudButton>
+    </MudContainer>
 
 @code {
+    [Parameter]
+    public int? Id { get; set; }
+
     private string SelectedCategory = "Length";
     private string FromUnit = "Meter";
     private string ToUnit = "Kilometer";
     private double InputValue = 0;
     private double Result = 0;
-    private List<Conversion> RecentConversions = new();
+    private int? EditingRecordId = null;
 
     private Dictionary<string, string[]> CategoryUnits = new()
     {
@@ -68,22 +68,42 @@
 
     protected override async Task OnInitializedAsync()
     {
-        await LoadRecent();
+        if (Id.HasValue)
+        {
+            var existing = await DbService.GetConversionByIdAsync(Id.Value);
+            if (existing != null)
+            {
+                EditingRecordId = existing.Id;
+                FromUnit = existing.FromUnit;
+                ToUnit = existing.ToUnit;
+                InputValue = existing.InputValue;
+
+                SelectedCategory = CategoryUnits.FirstOrDefault(kv => kv.Value.Contains(existing.FromUnit)).Key ?? "Length";
+
+                Convert();
+            }
+        }
     }
 
-    private async Task OnCategoryChanged()
-{
-    FromUnit = CurrentUnits[0];
-    ToUnit = CurrentUnits.Length > 1 ? CurrentUnits[1] : CurrentUnits[0];
-    await Convert();
-}
+    private void OnCategoryChanged()
+    {
+        FromUnit = CurrentUnits[0];
+        ToUnit = CurrentUnits.Length > 1 ? CurrentUnits[1] : CurrentUnits[0];
+        Convert();
+    }
 
-    private async Task Convert()
+    private void Convert()
     {
         Result = ConvertValue(SelectedCategory, FromUnit, ToUnit, InputValue);
+    }
+
+    private async Task SaveConversion()
+    {
+        Convert();
 
         var record = new Conversion
         {
+            Id = EditingRecordId ?? 0,
             FromUnit = FromUnit,
             ToUnit = ToUnit,
             InputValue = InputValue,
@@ -91,13 +111,23 @@
             ConvertedAt = DateTime.Now
         };
 
-        await DbService.SaveConversionAsync(record);
-        await LoadRecent();
+        if (EditingRecordId.HasValue)
+        {
+        record.WasUpdated = true;
+        
+            await DbService.UpdateConversionAsync(record);
+        }
+        else
+        {
+            await DbService.SaveConversionAsync(record);
+        }
+
+        Navigation.NavigateTo("/history");
     }
 
-    private async Task LoadRecent()
+    private void GoToHistory()
     {
-        RecentConversions = await DbService.GetRecentConversionsAsync();
+        Navigation.NavigateTo("/history");
     }
 
     private double ConvertValue(string category, string from, string to, double value)
